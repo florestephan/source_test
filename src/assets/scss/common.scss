@@ -1,0 +1,55 @@
+// TYPO
+$whiteclrs: #EFEFEF;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+html, body {
+  height: 100%;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+@mixin grid($n) {
+  display: grid;
+  grid-template-columns: repeat($n, minmax(0, 1fr));
+  grid-gap: 40px;
+  /*@include small {
+      grid-gap: 30px;
+  }
+  @include tablet {
+      grid-gap: 20px;
+  }*/
+}
+
+
+.gridCtn {
+  margin: 0 auto;
+  max-width: 1600px;
+  @include grid(12);
+  @media screen and (max-width: 1640px) {
+    max-width: 92%;
+  }
+  @media screen and (max-width: 900px) {
+    grid-column-gap: 20px;
+  }
+}
+
+:root {
+  --h1-size: 32px;
+  --h2-size: 15px;
+  --p1--size: 13px;
+  --p2--size: 11px;
+}

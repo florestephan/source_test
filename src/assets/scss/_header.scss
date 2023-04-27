@@ -1,0 +1,37 @@
+header {
+  .flex__container {
+    max-width: 92%;
+    margin: 12px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .account {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+      }
+
+      .firstname {
+        color: #EFEFEF;
+      }
+
+      .notification {
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        justify-content: center;
+        background: #3368F4;
+        color: $whiteclrs;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
