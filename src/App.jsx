@@ -1,10 +1,13 @@
 import Header from "./components/Header.jsx";
+import Movies from "./components/Movies.jsx";
 
 function App() {
 
     return (
-        <Header/>
-
+        <>
+            <Header/>
+            <Movies/>
+        </>
     )
 }
 
