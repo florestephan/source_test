@@ -1,0 +1,116 @@
+.movies__container {
+  max-width: 92%;
+  margin: 40px auto;
+
+  .head__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: var(--h2-size);
+      font-weight: 400;
+      color: $whiteclrs;
+
+      span {
+        color: grey;
+      }
+    }
+
+    button {
+
+    }
+  }
+
+  ul {
+    max-width: 100%;
+
+    li {
+      cursor: pointer;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      grid-column: span 3;
+      border-radius: 10px;
+      padding: 9px;
+      color: $whiteclrs;
+
+      &:hover {
+        input{
+          transition: opacity 0.3s ease-in-out;
+          opacity: 1;
+        }
+      }
+
+      input {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        left: 10px;
+        z-index: 10;
+        top: 10px;
+        width: 16px;
+        height: 16px;
+      }
+
+      .blockImg {
+        width: 100%;
+        aspect-ratio: 143 / 192;
+        height: auto;
+        position: relative;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .quality {
+          position: absolute;
+          border: rgba(194, 194, 214, 0.06);
+          backdrop-filter: blur(6px);
+          border-radius: 6px;
+          width: fit-content;
+          padding: 10px;
+          bottom: 10px;
+          left: 20px;
+          font-size: var(--p2--size);
+        }
+      }
+
+      .new {
+        span {
+          padding: 4px;
+          position: absolute;
+          top: 20px;
+          right: 0;
+          background: #B4143A;
+          color: $whiteclrs;
+          font-size: var(--p2--size);
+        }
+      }
+
+      .category {
+        background: rgba(45, 108, 225, 0.15);
+        border-radius: 6px;
+        color: #4C8BFF;
+        width: fit-content;
+        padding: 3px 6px;
+        position: absolute;
+        bottom: 10px;
+        font-size: var(--p2--size);
+      }
+
+      .title {
+        margin: 20px 0 30px 0;
+        font-size: var(--h2-size);
+        color: $whiteclrs;
+      }
+
+    }
+  }
+}
