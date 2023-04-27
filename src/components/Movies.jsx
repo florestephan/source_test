@@ -24,7 +24,6 @@ export default function Movies() {
 
     const handleChange = (e) => {
         let updatedList = [...checked];
-// if (checked) { <- this part, checked is the array of checked item right?
         if (e.target.checked) {
             updatedList = [...checked, e.target.value];
         } else {
@@ -35,11 +34,9 @@ export default function Movies() {
 
     const deletBtn = () => {
 
-        console.log(...checked)
+        console.log(checked)
 
-
-    }
-
+    };
 
     return (
         <main>
