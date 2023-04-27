@@ -1,3 +1,8 @@
+NPM INSTALL
+
+NPM RUN DEV
+
+
 How much time did you spend on this test and at which task did you stop?
 
 J'ai respecté le temps donnée 3h, l'intégration et l'appel api est bon mais j'ai bloqué sur la feature de delete un movie.
